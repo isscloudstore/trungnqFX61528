@@ -72,9 +72,24 @@ footer {
 .row div {
   float: left;
 }
+
 .column-1 {
   width: 30%;
 }
+
+.column-12 {
+  width: 30%;
+  position: relative;
+}
+
+.column-12::after {
+  content: "after";
+  position: absolute;
+  left: 0;
+  height: 15px;
+  width: 15px;
+}
+
 .column-2 {
   width: 70%;
 }
@@ -85,9 +100,61 @@ ol {
 }
 
 .section-content-photo {
-  display: inline-block;
   padding: 5px 10px;
   position: absolute;
   top: 100px;
   right: 30px;
+}
+
+.section-content-education {
+  position: relative;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.section-content-education::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: lightgray;
+  top: 0;
+  bottom: 0;
+  left: 4px;
+  margin-left: 0px;
+}
+
+.row-11 {
+  width: 100%;
+  overflow: auto;
+  position: relative;
+}
+.row-11 div {
+  float: left;
+}
+
+.row-11:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  height: 1px;
+  width: 97%;
+  background-color: lightgray;
+}
+
+.column-12 {
+  position: relative;
+  left: 0px;
+}
+
+.column-12::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0px;
+  background-color: lightgray;
+  border: 3px solid lightgray;
+  top: 15px;
+  border-radius: 100%;
 }
