@@ -39,14 +39,13 @@ li::maker {
   transform: translate(-50%, -50%);
   color: white;
 }
+
 .nav {
   display: flex;
-  overflow: hidden;
+  align-items: center;
   justify-content: center;
 }
-.nav a {
-  float: left;
-  display: block;
+.nav-info {
   color: black;
   text-align: center;
   text-decoration: none;
@@ -54,11 +53,30 @@ li::maker {
   border: 1px solid #ccc;
   font-size: 15px;
   margin: 0px;
-  padding: 10px;
+  padding: 10px 30px;
 }
 .nav a:hover {
   background-color: #ddd;
   color: black;
+}
+
+.nav-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+}
+.avatar-img {
+  position: absolute;
+  width: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  align-items: center;
+  text-align: center;
+  margin-left: -20px;
+  margin-top: -15px;
 }
 
 .info {
