@@ -110,6 +110,7 @@ li::maker {
   grid-template-columns: 3fr 1fr;
   row-gap: 10px;
   border: 1px solid #ccc;
+  height: 370px;
 }
 
 .exp-detail-header {
@@ -130,6 +131,7 @@ li::maker {
   grid-column: span 2;
   width: auto;
   height: auto;
+  height: 300px;
 }
 .exp-detail-content-grid-1 {
   display: grid;
@@ -230,7 +232,6 @@ li::maker {
 .project-detail {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  border: 1px solid lightgray;
   margin: 10px;
   padding: 10px 250px 10px 250px;
 }
